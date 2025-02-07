@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inquiry Form</title>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h2>Travel Management Inquiry Form</h2>
+      <form>
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <label for="travel-destination">Preferred Travel Destination:</label>
+        <input
+          type="text"
+          id="travel-destination"
+          name="travel-destination"
+          required
+        />
+
+        <label for="travel-dates">Preferred Travel Dates:</label>
+        <input type="date" id="travel-dates" name="travel-dates" required />
+
+        <label for="number-travelers">Number of Travelers:</label>
+        <input
+          type="number"
+          id="number-travelers"
+          name="number-travelers"
+          min="1"
+          required
+        />
+
+        <label for="budget">Approximate Budget:</label>
+        <select id="budget" name="budget" required>
+          <option value="">Select Budget Range</option>
+          <option value="under-1000">$0 - $1,000</option>
+          <option value="1000-3000">$1,000 - $3,000</option>
+          <option value="3000-5000">$3,000 - $5,000</option>
+          <option value="over-5000">$5,000+</option>
+        </select>
+
+        <label for="inquiry-details">Additional Inquiry Details:</label>
+        <textarea
+          id="inquiry-details"
+          name="inquiry-details"
+          rows="4"
+          placeholder="Please provide any other details or questions"
+        ></textarea>
+
+        <button type="submit" class="submit-btn" onclick="inquiry()">
+          Submit Inquiry
+        </button>
+      </form>
+      <p id="response-message"></p>
+    </div>
+
+    <div class="section__container footer__container">
+      <h4>Raido.</h4>
+      <div class="footer__socials">
+        <span>
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </span>
+        <span>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+        </span>
+      </div>
+      <p>
+        Cheap Romantic Vacations. Many people feel that there is a limited
+        amount of abundance , wealth, or chance to succed in life.
+      </p>
+      <ul class="footer__nav">
+        <li class="footer__links"><a href="index.html">Home</a></li>
+        <li class="footer__links"><a href="about.html">About us</a></li>
+        <li class="footer__links"><a href="Discover.html">Discover</a></li>
+        <li class="footer__links"><a href="blog.html">Blog</a></li>
+        <li class="footer__links"><a href="journal.html">Journals</a></li>
+        <li class="footer__links"><a href="gallery.html">Gallery</a></li>
+        <li class="footer__links"><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__bar">
+      Copyright @ 2024 web Design. All Rights Reserved.
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
